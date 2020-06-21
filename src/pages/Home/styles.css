@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Ubuntu:wght@700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3{
+  font-family: 'Ubuntu', sans-serif;
+}
+
+header{
+  width: 100%;
+  height: 100px;
+  background: #04081b;
+  position: relative;
+  margin-bottom: 50px;
+  color: #fff;
+  padding: 0 30px;
+}
+header h1{
+  line-height: 20px;
+  padding: 40px 0;
+  font-size: 2em;
+}
+header h1 span{
+  font-size: .7em;
+}
+
+.container{
+  width: 95%;
+  margin: auto;
+}
+
+.App {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background: #050311;
+}
+
+
+.select-info{
+  width: 37%;
+  float: left;
+  border-radius: 20px;
+  height: 70vh;
+  background: #04081b;
+  padding: 30px;
+  color: #ddd;
+}
+.select-info h2{
+  text-align: center;
+  font-size: 1.7em;
+}
+
+.row{
+    width: 100%;
+    height: 50px;
+    margin: 45px 0;
+}
+.row h3{
+    color: #777;
+    margin-bottom: 7px;
+}
+.row select{
+    width: 100%;
+    height: 100%;
+    border: none;
+    background: #08103a62;
+    color: #fff;
+    font-size: 15px;
+    padding: 0 15px;
+    outline-color: #fff;
+}
+.row select option{
+    background: gray;
+    font-size: 16px;
+}
+
+.info{
+  width: 60%;
+  float: right;
+  border-radius: 20px;
+  min-height: 70vh;
+  background: #04081b;
+  padding: 30px;
+  color: #ddd;
+  position: relative;
+}
+
+.info h2{
+  text-align: center;
+  font-size: 1.7em;
+}
+.info p{
+  text-align: center;
+  font-size: 20px;
+  margin: 20px 0;
+}
+
+.data{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+  margin-top: 75px;
+}
+.info-data{
+  width: 25%;
+  height: 100px;
+  background: rgba(61, 61, 82, 0.116);
+  margin:5px 5px;
+  text-align: center;
+}
+.info-data h3{
+  font-size: 1.4em;
+  color: #777;
+  margin: 10px;
+}
+.info-data h2{
+  pointer-events: none;
+}
+
+#update{
+  position: absolute;
+  bottom: 0;
+  right: 20px;
+  font-size: 16px;
+  text-align: none;
+  display: block;
+}
+#date{
+  
+  text-align: none;
+}
+
+footer{
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ddd;
+  font-size: 18px;
+  font-family: 'Roboto', sans-serif;
+}
+footer a{
+  color: #ddd;
+  text-decoration: none;
+}
+footer a:hover{
+  text-decoration: underline;
+}
+
+#teste{
+  display: none;
+}
+
+
+@media (max-width: 768px){
+  header{
+    height: 80px;
+    margin-bottom: 30px;
+  }
+  header h1{
+    font-size: 1.4em;
+    line-height: 20px;
+    padding: 30px 0;
+  }
+  .select-info{
+    float: none;
+    width: 100%;
+    margin-bottom: 20px;
+    height: 200px;
+    padding: 15px;
+  }
+  .select-info h2{
+    width: 100%;
+    font-size: 1.5em;
+    text-align: center;
+  }
+  .row{
+    width: 47%;
+    margin: 30px 0;
+  }
+
+  .row.country{
+    float: left;
+  }
+  .row.state{
+    float: right;
+  }
+  
+  .info{
+    float: none;
+    width: 100%;
+    padding: 30px 10px ;
+  }
+
+  .info-data{
+    width: 100%;
+    margin: 2px 2px;
+  }
+
+  .info-data h3{
+    font-size: 0.7em;
+  }
+
+  .info-data h2{
+    font-size: 1em;
+    margin-top: 7px;
+  }
+  #update{
+    /* position: relative; */
+    font-size: 14px;
+  }
+}
