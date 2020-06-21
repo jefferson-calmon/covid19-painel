@@ -11,7 +11,7 @@ const Home = () => {
   const [ countries, setCountries ] = useState()
   const [ states, setStates ] = useState()
 
-  var testeState;
+  var testeState; 
 
   useEffect(() => getDataCountry(), [selectedCountry])
 
@@ -55,8 +55,7 @@ const Home = () => {
       let nameState = document.getElementById('nameState');
       nameState.innerText = ``
 
-      date.innerText = `
-      ${dataCountry.updated_at.substring(8, 10)}/${dataCountry.updated_at.substring(5, 7)}/${dataCountry.updated_at.substring(0, 4)}`;
+      date.innerText = `${dataCountry.updated_at.substring(8, 10)}/${dataCountry.updated_at.substring(5, 7)}/${dataCountry.updated_at.substring(0, 4)}`;
 
       nameCountry.innerText = dataCountry.country;
 
@@ -231,7 +230,7 @@ const Home = () => {
 
           </div>
 
-          <p className="date" id="update">Atualizado em <span id="date">--/--/----</span></p>
+          <p className="date" id="update"><span>Atualizado em</span> <span id="date">--/--/----</span></p>
 
         </div>
 
