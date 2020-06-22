@@ -1,0 +1,25 @@
+#container{
+    width: 80%;
+    background: #04081b;
+    margin: auto;
+    border-radius: 20px;
+    min-height: 100vh;
+    padding: 50px;
+}
+#container h1{
+    text-align: center;
+    color: #fff;
+}
+
+.contactBox{
+    display: grid;
+    grid-template-columns: repeat(auto-fit minmax(300px, 1fr));
+    gap: 10px;
+    margin-top: 70px;
+}
+
+.box{
+    background: red;
+    width: 200px;
+    height: 200px;
+}

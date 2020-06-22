@@ -191,13 +191,12 @@ const Home = () => {
             
             <li><a href="https://github.com/jefferson-calmon/covid19-painel" target="_blank" rel="noopener noreferrer">Sobre</a></li>
 
-            <li><a href="https://github.com/jefferson-calmon/covid19-painel" target="_blank" rel="noopener noreferrer">Contato</a></li>
+            <li><a href="/contato" rel="noopener noreferrer">Contato</a></li>
 
           </ul>
         </nav>
         
         <div id="iconMenu" onClick={toggleMenu} className="fas fa-bars"></div>
-        <div id="toggle"></div>
       </header>
 
       <div className="container">
