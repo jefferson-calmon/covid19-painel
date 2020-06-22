@@ -36,14 +36,16 @@ header h1 span{
   right: 20px;
   transform: translateY(-50%);
   font-size: 25px;
+  display: none;
 }
 
 #nav{
-  /* display: none; */
+  display: block;
   position: absolute;
   top: 0;
   right: 0;
   padding: 0 30px;
+  transition: 1s;
 }
 
 #nav ul{
@@ -155,7 +157,7 @@ header h1 span{
   text-align: center;
 }
 .info-data h3{
-  font-size: 1.4em;
+  font-size: 1.3em;
   color: #777;
   margin: 10px;
 }
@@ -202,6 +204,16 @@ footer a:hover{
 }
 
 
+@media (max-width: 1000px){
+  .info-data h3{
+    font-size: 1.2em;
+  }
+  .info-data h2{
+    font-size: 1.3em;
+  }
+}
+
+
 @media (max-width: 800px){
   header{
     height: 80px;
@@ -213,6 +225,10 @@ footer a:hover{
     padding: 30px 0;
   }
 
+  #iconMenu{
+    display: block;
+  }
+
   #nav{
     position: absolute;
     background: #fff;
@@ -221,6 +237,7 @@ footer a:hover{
     z-index: 1;
     padding: 0;
     display: none;
+    opacity: 0;
   }
 
   #nav ul{  

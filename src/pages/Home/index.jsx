@@ -56,7 +56,7 @@ const Home = () => {
       let nameState = document.getElementById('nameState');
       nameState.innerText = ``
 
-      date.innerText = `${dataCountry.updated_at.substring(8, 10)}/${dataCountry.updated_at.substring(5, 7)}/${dataCountry.updated_at.substring(0, 4)}`;
+      date.innerText = `${dataCountry.updated_at.substring(8, 10)}/${dataCountry.updated_at.substring(5, 7)}/${dataCountry.updated_at.substring(0, 4)} - ${dataCountry.updated_at.substring(11, 16)}`;
 
       nameCountry.innerText = dataCountry.country;
 
@@ -84,8 +84,7 @@ const Home = () => {
       axios.get(`https://covid19-brazil-api.now.sh/api/report/v1/brazil/uf/${testeState}`).then(res => {
         const dataState = res.data
 
-        date.innerText = `
-        ${dataState.datetime.substring(8, 10)}/${dataState.datetime.substring(5, 7)}/${dataState.datetime.substring(0, 4)}`;
+        date.innerText = `${dataState.datetime.substring(8, 10)}/${dataState.datetime.substring(5, 7)}/${dataState.datetime.substring(0, 4)} - ${dataState.datetime.substring(11, 16)}`;
         
         let nameState = document.getElementById('nameState');
         nameState.innerText = `-${dataState.uf}`
@@ -165,11 +164,13 @@ const Home = () => {
     let nav = document.querySelector('#nav');
 
     if (toggle){
-      nav.style.display = "block"
+      nav.style.display = 'block'
+      nav.style.opacity = "1"
       icon.style.color = '#000'
       icon.className = 'fas fa-times'
     }else{
-      nav.style.display = "none"
+      nav.style.display = 'none'
+      nav.style.opacity = "0"
       icon.style.color = '#fff'
       icon.className = 'fas fa-bars'
     }
@@ -177,7 +178,6 @@ const Home = () => {
     
     stateToggle = !stateToggle;
   }
-      
 
   return(
     <div className="App">
@@ -185,7 +185,7 @@ const Home = () => {
         <h1>Painel <span>Covid-19</span></h1>
         <nav id="nav">
           <ul>
-            <li><a href="/" target="_blank" rel="noopener noreferrer">Painel</a></li>
+            <li><a href="/" onClick={toggleMenu} rel="noopener noreferrer">Painel</a></li>
 
             <li><a href="https://covid19-brazil-api.now.sh/" target="_blank" rel="noopener noreferrer">API</a></li>
             
