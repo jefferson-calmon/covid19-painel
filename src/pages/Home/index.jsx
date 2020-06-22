@@ -11,7 +11,8 @@ const Home = () => {
   const [ countries, setCountries ] = useState()
   const [ states, setStates ] = useState()
 
-  var testeState; 
+  var testeState;
+  var stateToggle = true;
 
   useEffect(() => getDataCountry(), [selectedCountry])
 
@@ -59,10 +60,10 @@ const Home = () => {
 
       nameCountry.innerText = dataCountry.country;
 
-      cases.innerText = dataCountry.confirmed
-      death.innerText = dataCountry.deaths
-      suspect.innerText = dataCountry.cases
-      refuse.innerText = dataCountry.recovered
+      cases.innerText = (dataCountry.confirmed).toLocaleString('pt-BR')
+      death.innerText = dataCountry.deaths.toLocaleString('pt-BR')
+      suspect.innerText = dataCountry.cases.toLocaleString('pt-BR')
+      refuse.innerText = dataCountry.recovered.toLocaleString('pt-BR')
     })
   }
 
@@ -90,10 +91,10 @@ const Home = () => {
         nameState.innerText = `-${dataState.uf}`
 
         if (!dataState.error){
-          cases.innerText = dataState.cases
-          death.innerText = dataState.deaths
-          suspect.innerText = dataState.suspects
-          refuse.innerText = dataState.refuses
+          cases.innerText = dataState.cases.toLocaleString('pt-BR')
+          death.innerText = dataState.deaths.toLocaleString('pt-BR')
+          suspect.innerText = dataState.suspects.toLocaleString('pt-BR')
+          refuse.innerText = dataState.refuses.toLocaleString('pt-BR')
         }
     })
   }
@@ -156,12 +157,47 @@ const Home = () => {
       setCountries(listCountry.sort())
     })
   }, [])
+
+  function toggleMenu(){
+    const toggle = stateToggle;
+    const icon = document.querySelector('#iconMenu');
+
+    let nav = document.querySelector('#nav');
+
+    if (toggle){
+      nav.style.display = "block"
+      icon.style.color = '#000'
+      icon.className = 'fas fa-times'
+    }else{
+      nav.style.display = "none"
+      icon.style.color = '#fff'
+      icon.className = 'fas fa-bars'
+    }
+
+    
+    stateToggle = !stateToggle;
+  }
       
 
-    return(
-        <div className="App">
+  return(
+    <div className="App">
       <header>
         <h1>Painel <span>Covid-19</span></h1>
+        <nav id="nav">
+          <ul>
+            <li><a href="/" target="_blank" rel="noopener noreferrer">Painel</a></li>
+
+            <li><a href="https://covid19-brazil-api.now.sh/" target="_blank" rel="noopener noreferrer">API</a></li>
+            
+            <li><a href="https://github.com/jefferson-calmon/covid19-painel" target="_blank" rel="noopener noreferrer">Sobre</a></li>
+
+            <li><a href="https://github.com/jefferson-calmon/covid19-painel" target="_blank" rel="noopener noreferrer">Contato</a></li>
+
+          </ul>
+        </nav>
+        
+        <div id="iconMenu" onClick={toggleMenu} className="fas fa-bars"></div>
+        <div id="toggle"></div>
       </header>
 
       <div className="container">

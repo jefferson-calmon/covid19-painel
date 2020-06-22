@@ -29,6 +29,45 @@ header h1 span{
   font-size: .7em;
 }
 
+#iconMenu{
+  position: absolute;
+  z-index: 100000;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  font-size: 25px;
+}
+
+#nav{
+  /* display: none; */
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0 30px;
+}
+
+#nav ul{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+}
+#nav ul li{
+  list-style: none;
+  margin-left: 10px;
+  line-height: 20px;
+  padding: 40px 20px;
+}
+#nav ul li a{
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+  position: relative;
+  font-weight: 500;
+}
+#nav ul li a:hover{
+  color: #777;
+}
+
 .container{
   width: 95%;
   margin: auto;
@@ -122,6 +161,7 @@ header h1 span{
 }
 .info-data h2{
   pointer-events: none;
+  letter-spacing: 1.5px;
 }
 
 #update{
@@ -162,7 +202,7 @@ footer a:hover{
 }
 
 
-@media (max-width: 768px){
+@media (max-width: 800px){
   header{
     height: 80px;
     margin-bottom: 30px;
@@ -172,6 +212,37 @@ footer a:hover{
     line-height: 20px;
     padding: 30px 0;
   }
+
+  #nav{
+    position: absolute;
+    background: #fff;
+    width: 100%;
+    height: 200vh;
+    z-index: 1;
+    padding: 0;
+    display: none;
+  }
+
+  #nav ul{  
+    /* display: none; */
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  #nav ul li{
+    padding: 0;
+    margin-bottom: 40px;
+  }
+  #nav ul li a{
+    color: #050311;
+    font-size: 30px;
+    font-family: 'Ubuntu', sans-serif;
+    padding: 10px;
+  }
+
   .select-info{
     float: none;
     width: 100%;
@@ -189,6 +260,7 @@ footer a:hover{
     width: 47%;
     margin: 30px 0;
   }
+
 
   .row.country{
     float: left;
@@ -218,17 +290,18 @@ footer a:hover{
   }
 
   .info-data h3{
-    font-size: 0.7em;
+    font-size: 1em;
   }
 
   .info-data h2{
-    font-size: 1em;
+    font-size: 1.4em;
     margin-top: 7px;
   }
+
   #update{
     /* position: relative; */
     font-size: 10px;
-    bottom: -15px;
+    bottom: -10px;
     right: 15px;
   }
 }
