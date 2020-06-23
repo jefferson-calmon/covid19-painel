@@ -1,25 +1,62 @@
+
 #container{
-    width: 80%;
-    background: #04081b;
-    margin: auto;
+    width: 450px;
+    background: #2F363D;
     border-radius: 20px;
-    min-height: 100vh;
     padding: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 #container h1{
     text-align: center;
     color: #fff;
+    font-size: 30px;
 }
 
 .contactBox{
+    margin-top: 50px;
+    width: 100%;
     display: grid;
-    grid-template-columns: repeat(auto-fit minmax(300px, 1fr));
-    gap: 10px;
-    margin-top: 70px;
+    grid-template-columns: repeat(4, 1fr);
 }
 
 .box{
-    background: red;
-    width: 200px;
-    height: 200px;
+    margin: 10px 0;
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+    position: relative;
+    width: 100%;
+    cursor: pointer;
+}
+
+.box span{
+    display: none;
+    background: #fff;
+    color: #fff;
+    position: absolute;
+    bottom: -30px;
+    width: 90px;
+    font-size: 15px;
+    padding: 5px 7px;  
+    font-weight: 500;
+}
+
+.box:hover span{
+    display: block;
+}
+
+.box span.link{
+    background: linear-gradient(90deg, #0000ff, rgb(90, 167, 255));
+}
+.box span.git{
+    background: linear-gradient(90deg, #21262a, #404448);
+}
+.box span.insta{
+    background: linear-gradient(90deg, #FAC96A, #F05234, #D0037A, #8810BA, #3C38E9);
+}
+.box span.port{
+    background: linear-gradient(90deg, #CF731D, rgb(255, 185, 55));
 }

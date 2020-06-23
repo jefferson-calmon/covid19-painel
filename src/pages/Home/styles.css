@@ -14,7 +14,8 @@ h1, h2, h3{
 header{
   width: 100%;
   height: 100px;
-  background: #04081b;
+  /* background: #04081b; */
+  background: #2F363D;
   position: relative;
   margin-bottom: 50px;
   color: #fff;
@@ -37,6 +38,7 @@ header h1 span{
   transform: translateY(-50%);
   font-size: 25px;
   display: none;
+  cursor: pointer;
 }
 
 #nav{
@@ -79,7 +81,8 @@ header h1 span{
   position: relative;
   width: 100%;
   min-height: 100vh;
-  background: #050311;
+  /* background: #050311; */
+  background: #24292E;
 }
 
 
@@ -88,7 +91,7 @@ header h1 span{
   float: left;
   border-radius: 20px;
   height: 70vh;
-  background: #04081b;
+  background: #2F363D;
   padding: 30px;
   color: #ddd;
 }
@@ -110,7 +113,7 @@ header h1 span{
     width: 100%;
     height: 100%;
     border: none;
-    background: #08103a62;
+    background: #292f35;
     color: #fff;
     font-size: 15px;
     padding: 0 15px;
@@ -126,7 +129,7 @@ header h1 span{
   float: right;
   border-radius: 20px;
   min-height: 70vh;
-  background: #04081b;
+  background: #2F363D;
   padding: 30px;
   color: #ddd;
   position: relative;

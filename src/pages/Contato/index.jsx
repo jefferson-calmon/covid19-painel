@@ -1,4 +1,5 @@
 import React from 'react';
+import { FiInstagram, FiGithub, FiLinkedin, FiCode } from 'react-icons/fi'
 
 import './styles.css';
 
@@ -52,11 +53,30 @@ const Contato = () => {
             <div id="container">
                 <h1>Entre em contato</h1>
                 <div className="contactBox">
-                    <div className="box"></div>
-                    <div className="box"></div>
-                    <div className="box"></div>
-                    <div className="box"></div>
-                    <div className="box"></div>
+                    <a href="#usdh" target="_blank" rel="noopener noreferrer">
+                        <div className="box">
+                        <FiLinkedin/>
+                        <span className="link">Linkedin</span>
+                        </div>
+                    </a>
+                    <a href="#usdh" target="_blank" rel="noopener noreferrer">
+                        <div className="box">
+                        <FiGithub />
+                        <span  className="git"> GitHub</span>
+                        </div>
+                    </a>
+                    <a href="#usdh" target="_blank" rel="noopener noreferrer">
+                        <div className="box">
+                        <FiInstagram />
+                        <span  className="insta"> Instagram</span>
+                        </div>
+                    </a>
+                    <a href="#usdh" target="_blank" rel="noopener noreferrer">
+                        <div className="box">
+                        <FiCode />
+                        <span className="port">Portfólio</span>
+                        </div>
+                    </a>
                 </div>
             </div>
 
