@@ -166,7 +166,6 @@ const Home = () => {
     if (toggle){
       nav.style.display = 'block'
       nav.style.opacity = "1"
-      icon.style.color = '#000'
       icon.className = 'fas fa-times'
     }else{
       nav.style.display = 'none'
