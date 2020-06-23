@@ -15,6 +15,10 @@
     font-size: 30px;
 }
 
+a{
+    text-decoration: none;
+}
+
 .contactBox{
     margin-top: 50px;
     width: 100%;

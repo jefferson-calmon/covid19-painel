@@ -53,25 +53,25 @@ const Contato = () => {
             <div id="container">
                 <h1>Entre em contato</h1>
                 <div className="contactBox">
-                    <a href="#usdh" target="_blank" rel="noopener noreferrer">
+                    <a href="https://www.linkedin.com/in/jefferson-f-b24248191/" target="_blank" rel="noopener noreferrer">
                         <div className="box">
                         <FiLinkedin/>
                         <span className="link">Linkedin</span>
                         </div>
                     </a>
-                    <a href="#usdh" target="_blank" rel="noopener noreferrer">
+                    <a href="https://github.com/jefferson-calmon" target="_blank" rel="noopener noreferrer">
                         <div className="box">
                         <FiGithub />
                         <span  className="git"> GitHub</span>
                         </div>
                     </a>
-                    <a href="#usdh" target="_blank" rel="noopener noreferrer">
+                    <a href="https://www.instagram.com/jeffz1_/" target="_blank" rel="noopener noreferrer">
                         <div className="box">
                         <FiInstagram />
                         <span  className="insta"> Instagram</span>
                         </div>
                     </a>
-                    <a href="#usdh" target="_blank" rel="noopener noreferrer">
+                    <a href="https://jefferson-calmon.github.io/portfolio" target="_blank" rel="noopener noreferrer">
                         <div className="box">
                         <FiCode />
                         <span className="port">Portfólio</span>
