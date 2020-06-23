@@ -155,7 +155,7 @@ header h1 span{
 .info-data{
   width: 25%;
   height: 100px;
-  background: rgba(61, 61, 82, 0.116);
+  background: #292f35;
   margin:5px 5px;
   text-align: center;
 }
