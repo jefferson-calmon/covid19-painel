@@ -64,3 +64,13 @@ a{
 .box span.port{
     background: linear-gradient(90deg, #CF731D, rgb(255, 185, 55));
 }
+
+@media (max-width: 768px){
+    #container{
+        width: 95%;
+        padding: 15px;
+    }
+    #container h1{
+        font-size: 25px;
+    }
+}
