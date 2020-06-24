@@ -184,13 +184,13 @@ const Home = () => {
         <h1>Painel <span>Covid-19</span></h1>
         <nav id="nav">
           <ul>
-            <li><a href="/" onClick={toggleMenu} rel="noopener noreferrer">Painel</a></li>
+            <li><a href="/" onClick={toggleMenu} >Painel</a></li>
 
             <li><a href="https://covid19-brazil-api.now.sh/" target="_blank" rel="noopener noreferrer">API</a></li>
             
             <li><a href="https://github.com/jefferson-calmon/covid19-painel" target="_blank" rel="noopener noreferrer">Sobre</a></li>
 
-            <li><a href="/contato" rel="noopener noreferrer">Contato</a></li>
+            <li><a href="/contato">Contato</a></li>
 
           </ul>
         </nav>
