@@ -272,7 +272,7 @@ const Home = () => {
 
 
       <footer>
-        <p>Powered by <a href="htpps://github.com/jefferson-calmon">Jefferson Ferrari</a></p>
+        <p>Powered by <a href="https://www.linkedin.com/in/jefferson-f-b24248191/" target="_blank">Jefferson Ferrari</a></p>
         <p id="tes"></p>
       </footer>
     </div>
