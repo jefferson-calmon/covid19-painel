@@ -8,11 +8,9 @@ const Routes = () => {
     return (
         <BrowserRouter>
             <Route component={Home} path="/" exact />
-
             <Route component={Contato} path="/contato" />
-
         </BrowserRouter>
     )
 }
 
-export default Routes
+export default Routes;
